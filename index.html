@@ -8,14 +8,24 @@
   </head>
   <body>
     <!-- wrapper -->
-    <div class="wrapper">
+    <div class="wrapper show-category">
       <div class="screen-backdrop"></div>
       <div class="screen home-screen">
         <div class="head-wrapper">
           <!-- menu icon -->
           <div class="menu-btn">
             <!-- replace with svg for menu when online -->
-            <img src="./asset/home.png" alt="menu" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="#2e2e2e"
+            >
+              <path
+                d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"
+              />
+            </svg>
           </div>
 
           <!-- welcome text -->
@@ -194,6 +204,70 @@
                   <img src="./asset/create.png" alt="" />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tasks screen  -->
+      <div class="screen category-screen">
+        <div class="head-wrapper">
+          <div class="back-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="#2e2e2e"
+            >
+              <path
+                d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"
+              />
+            </svg>
+          </div>
+
+          <div class="option">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="34px"
+              viewBox="0 -960 960 960"
+              width="34px"
+              fill="#2e2e2e"
+            >
+              <path
+                d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="category-details">
+          <img src="./asset/exam.png" alt="" id="category-img" />
+          <div class="details">
+            <p>8 Tasks</p>
+            <h1>Personal</h1>
+          </div>
+        </div>
+
+        <!-- tasks -->
+        <div class="tasks-wrapper">
+          <div class="tasks">
+            <div class="task-wrapper">
+              <label for="task" class="task">
+                <input type="checkbox" name="" id="task" />
+                <span class="checkmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                    fill="#fff"
+                  >
+                    <path
+                      d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                    />
+                  </svg>
+                </span>
+                <p>Buy a new car</p>
+              </label>
             </div>
           </div>
         </div>
