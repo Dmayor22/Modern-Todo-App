@@ -29,12 +29,18 @@ export let tasks = [
     category: "Finance",
     completed: false,
   },
-    {
+  {
     id: 6,
     task: "Review investment portfolio",
     category: "Personal",
     completed: false,
-  }
+  },
+  {
+    id: 7,
+    task: "Review investment portfolio",
+    category: "Education",
+    completed: false,
+  },
 ];
 
 export let category = [
