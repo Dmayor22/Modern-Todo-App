@@ -7,14 +7,14 @@ export let tasks = [
   },
   {
     id: 2,
-    task: "Review investment portfolio",
+    task: " See Doctor",
     category: "Fitness",
     completed: false,
   },
   {
     id: 3,
     task: "Review investment portfolio",
-    category: "Education",
+    category: "Fitness",
     completed: false,
   },
   {
@@ -29,6 +29,12 @@ export let tasks = [
     category: "Finance",
     completed: false,
   },
+    {
+    id: 6,
+    task: "Review investment portfolio",
+    category: "Personal",
+    completed: false,
+  }
 ];
 
 export let category = [
@@ -46,6 +52,6 @@ export let category = [
   },
   {
     title: "Education",
-    img: "./asset/exam.png",
+    img: "./asset/announcement.png",
   },
 ];

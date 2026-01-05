@@ -26,13 +26,18 @@ addTaskBtn.addEventListener("click", toggleAddTaskForm);
 
 // add category and tasks using js
 const categoriesContainer = document.querySelector(".categories");
+const categoryTask = document.querySelector(".category-task");
+const categoryTitle = document.querySelector(".category-title");
+const categoryImg = document.querySelector("#category-img");
+
+let selectedCategory = category[0];
 
 const renderCategories = () => {
   categoriesContainer.innerHTML = "";
   // get all tasks of current category
   category.forEach((categoryList) => {
     const categoryTasks = tasks.filter((task) => {
-      task.category.toLowerCase() === categoryList.title.toLowerCase();
+      return task.category.toLowerCase() === categoryList.title.toLowerCase();
     });
 
     // div creation to render category
@@ -55,6 +60,12 @@ const renderCategories = () => {
                 </div>
               </div>`;
 
+    div.addEventListener("click", () => {
+      wrapper.classList.add("show-category");
+      selectedCategory = categoryList;
+      categoryTitle.innerHTML = categoryList.title;
+      categoryImg.src = `${categoryList.img}`
+    });
     categoriesContainer.appendChild(div);
   });
 };
