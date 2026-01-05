@@ -79,4 +79,28 @@ const renderCategories = () => {
   });
 };
 
+const tasksContainer = document.querySelector(".tasks");
+
+const renderTasks = () => {
+  const tasksContainer = document.querySelector(".tasks");
+  tasksContainer.innerHTML = "";
+  const categoryTasks = tasks.filter((task) => {
+    return task.category.toLowerCase() === selectedCategory.title.toLowerCase();
+  });
+
+  // if no task found
+  if (categoryTasks.length === 0) {
+    tasksContainer.innerHTML = `<p class="no-task">No task found</p>`;
+    return;
+  } else {
+    categoryTasks.forEach((task) => {
+      const div = document.createElement("div");
+      div.classList.add("task-wrapper");
+      const label = document.createElement("label")
+      label.classList.add("task")
+    });
+  }
+};
 renderCategories();
+calculateTotalTasks();
+renderTasks();

@@ -437,3 +437,12 @@ body {
   opacity: 1;
   visibility: visible;
 }
+
+
+/* no task found */
+.no-task {  
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  opacity: 0.6;
+} 
